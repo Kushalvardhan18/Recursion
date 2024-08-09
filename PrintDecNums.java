@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class PrintDecNums {
+public class PrintDecNums {
+    public static void main(String[] args){
+        
+    }
 }
