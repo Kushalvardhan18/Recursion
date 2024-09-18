@@ -1,13 +1,16 @@
 public class SortedOrNot {
-    public static int sortFunc(int nums[]){
-        int n = nums.length;
-        if(n==1){
-            return n;
-        }
-        nums[0]<nums[1]+sortFunc(n-1);
+    public static boolean sortFunc(int nums[],int i){
+       if(i== nums.length-1){
+           return true;
+       }
+        if(nums[i]>nums[i+1]){
+           return false;
+       }
+      return sortFunc(nums,i+1);
     }
     public static void main(String[] args){
-        int nums[] = {4,7,9,8,1,2};
-        sortFunc(nums);
+        int nums[] = {4,7,8};
+        int i=0;
+        System.out.println(sortFunc(nums,i));
     }
 }
