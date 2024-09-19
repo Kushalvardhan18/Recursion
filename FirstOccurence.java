@@ -13,7 +13,7 @@ public class FirstOccurence {
 
     }
     public static void main(String[] args){
-        int nums[] ={8,3,6,9,10,2,3};
+        int nums[] ={8,3,6,5,9,10,5,2,3};
         int key =5;
         int i=0;
         System.out.println(firstOccurIndex(nums,key,i));
