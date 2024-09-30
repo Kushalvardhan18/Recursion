@@ -10,7 +10,7 @@ public class TilingProblem {
         // horizontal choice
         int horizontalChoice = solution(n-2);
 
-        int totalWays = verticalTiles +horizontalChoice;
+        int totalWays = verticalTiles + horizontalChoice;
         return totalWays;
     }
     public static void main(String[] args){
